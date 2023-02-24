@@ -1,0 +1,146 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212121;
+  padding: 10px;
+  color: #fff;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* SearchForm */
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-form input[type='text'] {
+  flex: 1;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-form button[type='submit'] {
+  background-color: #212121;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* BookList */
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.book-list-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.book-list-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.book-list-item h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.book-list-item p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+/* BookDetail */
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.book-detail img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.book-detail h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.book-detail p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.book-detail button {
+  background-color: #212121;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* LoginForm */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.login-form input[type='email'],
+.login-form input[type='password'] {
+  margin-bottom: 10px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.login-form button[type='submit'] {
+  background-color: #212121;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Global */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
